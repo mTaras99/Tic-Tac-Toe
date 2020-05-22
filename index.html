@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Teo</title>
+    <style>
+        .container{
+            height:100vh;
+            overflow:hidden;
+        }
+    #game-board
+        {
+            height:450px;
+            width:450px;
+            
+        }
+    .tile
+        {
+            height:150px;
+            width:150px;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            float:left;
+            font-size: 100px;
+            line-height: 150px;
+            text-align: center;
+        }
+    .players
+        {
+            height:100px;
+            width:100px;
+            background-color: aqua;
+            float:left;
+        }
+    .scoreOfPlayer
+        {
+            height:50px;
+            width:100px;
+            background-color: azure;
+            font-size:40px;
+            text-align: center;
+        }
+    .nameplayer
+        {
+            height:50px;
+            width:100px;
+            background-color:blueviolet;
+            font-size: 30px;
+        }
+        .active
+        {
+            background-color: red;
+        }
+        #navigation
+        {
+            width:450px;
+        }
+        #strzalkanav
+        {
+            width:250px;
+            height:100px;
+            float:left;
+            font-size:100px;
+            text-align: center;
+            line-height: 100px; 
+        }
+        .clear
+        {
+            clear:both;
+        }
+        #buttonStyle
+        {
+            height:150px;
+            width:450px;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div id="navigation">
+   <div class="players">
+       <div class="nameplayer">Player1</div>
+       <div class="scoreOfPlayer active" id="player1">0</div>
+   </div>
+   <div id="strzalkanav">&harr;</div>
+   <div class="players">
+       <div class="nameplayer" >Player2</div>
+       <div class="scoreOfPlayer" id="player2">0</div>
+   </div>
+</div>
+   <div class="clear"></div>
+    <div id="game-board">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </div>
+    
+    <button onclick="startGame()" id="buttonStyle">Graj</button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
